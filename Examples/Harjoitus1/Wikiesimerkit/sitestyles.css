@@ -1,0 +1,14 @@
+body {
+    background-color: lightgray;
+}
+h1 {
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.commandLine {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkgray;
+    color: red;
+}
