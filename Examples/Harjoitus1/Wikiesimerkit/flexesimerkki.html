@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex esimerkki</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu {
+            background-color: darkgoldenrod;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 2%;
+            flex: 25%;
+        }
+
+        /* Define properties on an item (link) in the menu */
+        .menu a {
+            background-color: chocolate;
+            color: antiquewhite;
+            padding: 4%;
+            margin-top: 10px;
+            display: block;
+            box-shadow: 3px 3px firebrick;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .main {
+            background-color: lightgrey;
+            padding: 2%;
+            flex: 75%;
+        }
+
+        /* Put menu and main frames to a single column when using less than 800 pix wide screen */
+        @media (max-width: 800px) {
+
+            .menu,
+            .main {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <h3 style="color: antiquewhite;">Valitse sivu</h3>
+            <a href="#">Tuotteet</a>
+            <a href="#">Palvelut</a>
+            <a href="#">Yhteystiedot</a>
+            <a href="#">Tietosuoja</a>
+        </div>
+        <div class="main">
+            <h2>Lehmät ja saaristo</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
