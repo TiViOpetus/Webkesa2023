@@ -10,11 +10,13 @@
             box-sizing: border-box;
         }
 
+        /* Flex Container for  a menu and main content*/
         .container {
             display: flex;
             flex-wrap: wrap;
         }
 
+        /* Style definitions for the menu 25% of vieport width*/
         .menu {
             background-color: darkgoldenrod;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,17 +36,17 @@
             text-align: center;
         }
 
+        /* Style settings for the main content */
         .main {
             background-color: lightgrey;
             padding: 2%;
             flex: 75%;
         }
 
-        /* Put menu and main frames to a single column when using less than 800 pix wide screen */
+        /* Put menu and main frames to a single column when less than 800 pix wide screen or window */
         @media (max-width: 800px) {
 
-            .menu,
-            .main {
+            .menu, .main {
                 flex: 100%;
             }
         }

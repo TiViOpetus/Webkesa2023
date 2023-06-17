@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: black;
+            color: antiquewhite;
+            padding: 15px;
+        }
+
+        .button-group button {
+            background-color: chocolate;
+            border: 1px solid firebrick;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            width: 100%;
+            padding: 10px 24px;
+            cursor: pointer;
+            display: block;
+        }
+
+        .button-group button:hover {
+            background-color: firebrick;
+            color: gold;
+        }
+
+        .main {
+            margin-top: 14px;
+            background-color: lightgrey;
+            font-family:cursive;
+        }
+
+        .ads {
+            background-color: #f0f26d;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* 12 colums for large screens */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Meidän firma</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <div class="button-group">
+                <button onclick="window.location.href='#';">Tuotteet</button>
+                <button>Palvelut</button>
+                <button>Yhteystiedot</button>
+                <button>Tietosuoja</button>
+            </div>
+        </div>
+        <div class="col-6 main">
+            <h1>Lehmät saaristossa</h1>
+            <p>Lehmillä on merkittävä rooli saaristoluonnon ylläpitäjänä.</p>
+        </div>
+
+        <div class="col-3 right">
+            <div class="ads">
+                <h2>Osta nyt</h2>
+                <p>Erikoistarjous sinulle ja vain tänään! <br>
+                    säästä yli 100 %
+                </p>
+                <h2>Ohittamaton tarjous</h2>
+                <p>Tarjous, josta ei voi kieltäytyä</p>
+                <h2>Supertarjous</h2>
+                <p>Uudet perunat ainostaa 35 € kilo <br>
+                    tätä halvemmalla et saa mistään!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Löydä meidät somesta</p>
+    </div>
+
+</body>
+
+</html>
