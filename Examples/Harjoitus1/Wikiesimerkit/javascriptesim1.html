@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-esimerkki</title>
+
+    <script>
+        /* Define a fucntion to run when putton is pressed: changes a paragraph with id ad1 */
+        function bossIsComming() {
+            document.getElementById("ad1").innerHTML = "Tuote on täyttä tavaraa. Parempaa ostosta et voisi tehdä!";
+        }
+
+        /* Define a function that changes the style of given id by changing it's class ta a new class*/
+        function styleElementById(id, newClass) {
+            document.getElementById(id).className = newClass;
+        }
+
+        /* Define a function to change all elements of a given class to another class */
+        function styleElementsByClass(currentClass, newClass) {
+            var elements = document.getElementsByClassName(currentClass);
+            for (var x = 0; x < elements.length; x++) {
+                elements[x].className = newClass;
+            }
+        }
+
+        function setPicture() {
+            document.getElementById("picture1").src = "Tabletti834px.png";
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: larger;
+        }
+
+        /* Style panic buttons */
+        .panic {
+            padding: 10px;
+            background-color: darkred;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+
+        .ordinaryBtn {
+            padding: 10px;
+            background-color: dodgerblue;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+
+        .officialHeading {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(rgb(36, 34, 34));
+
+        }
+
+        .fancy {
+            font-family: fantasy;
+            color: chartreuse;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="ad1heading" class="officialHeading">Uutuus Java coffee vie kielen mennessään</h1>
+    <p id="ad1">Hirveää kuraa, eihän sitä juo Erkkikään.</p>
+
+    <h1 class="officialHeading">Kaurakerma - baristan painajainen</h1>
+    <p>Kaurakermaa käytä en, en enää ikinä</p>
+
+    <h1 class="officialHeading">Sokeri on myrkkyä</h1>
+    <p>Luovu sokerista, elät pidempään</p>
+
+    <h1 class="officialHeading">Stevialla vielä suuremmat haitat</h1>
+    <p>Pysäytä makean himosi ja elät pidempään</p>
+    <div>
+        <img id="picture1" src="Konepaja.jpg" alt="kuva 1">
+    </div>
+
+    <button class="panic" onclick="bossIsComming()">Pahus, pomo tulee</button>
+    <button class="ordinaryBtn" onclick="styleElementById('ad1heading', 'fancy')">"Paranna" otsikoita</button>
+    <button class="ordinaryBtn" onclick="styleElementsByClass('officialHeading', 'fancy')">"Paranna" kaikki
+        otsikot</button>
+    <button class="ordinaryBtn" onclick="setPicture()">"Vaihda kuva</button>
+
+</body>
+
+</html>
