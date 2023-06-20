@@ -9,6 +9,6 @@ Ensimmäisessä harjoituksessa tutustutaan Bootstrap Studion käyttöön ja luod
 
 Kännykän ruudulta katsottuna se näyttää tältä:
 
-
+![image](https://github.com/TiViOpetus/Webkesa2023/blob/main/WikiPictures/Beesoft2.png)
 
 Harjoituksessa käyteään erilaisia rakenteita ja valmiita Bootstrap-komponentteja. Aloitussivulla käytetään lisäksi videota. Videon oikea toiminta edellyttää version 4:n käyttämistä. Uudemman version videon automaattikäynnistyksessä on ongelmia.
